@@ -9,35 +9,35 @@
  const Numformat= '^[0-9]*$';
   FormCheck=()=>
   {
-
+    let showStatus=[];
     // To check all fields are not empty
 
       //1.Name (accepts only alphabets a-zA-Z, max character size:20)
     if(fname=='' && lname=='' && classe=='' && yearPass=='' && Percentage=='')
     {
-        alert('fill all field');    
+           showStatus.push('fill all field' );  
     }
-    else if(fname.maxlength=='20'  && lname.maxlength=='20')
+     if(fname.maxlength==20 && lname.maxlength==20)
     {
-        alert('Enter Your valid  Last Name');    
+        showStatus.push('Enter Name upto Max 20 leg');    
 
     }
-    else if( classe=='')
-    {
-
-    }
-    else if( yearPass=='')
+   if( classe=='')
     {
 
     }
-    else if( Number(Percentage)==true)
+     if( yearPass=='')
     {
 
     }
-    else
+     if( Number(Percentage)==true)
     {
-     console.log('done');
+
     }
+    // else
+    // {
+    //  console.log('done');
+    // }
   }
 
   submit.addEventListener('click',FormCheck)

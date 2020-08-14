@@ -1,11 +1,44 @@
 //form validation
-//1.Name (accepts only alphabets a-zA-Z, max character size:20)
- let name=document.getElementById('Name').value;
- if(name=='')
- {
-     alert('Enter Your Name');
- }
+ let fname=document.getElementById('fName').value;
+ let lname=document.getElementById('lName').value;
+ let classe= document.getElementById('class');
+ let Percentage = document.getElementById('Percentage');
+ let submit = document.getElementById('btn-submit');
+ const maxNameLength =20;
+//  ^[0-9]*$"  
+  FormCheck=()=>
+  {
+      //console.log('insidemform');
+      //1.Name (accepts only alphabets a-zA-Z, max character size:20)
+    if(fname=='' && fname.maxlength=='20')
+    {
+        alert('Enter Your valid First Name');    
+    }
+    else if(lname==''  && lname.maxlength=='20')
+    {
+        alert('Enter Your valid  Last Name');    
 
+    }
+    else if( classe=='')
+    {
+
+    }
+    else if( classe=='')
+    {
+
+    }
+    else if( Percentage=='')
+    {
+
+    }
+    else
+    {
+     console.log('done');
+    }
+  }
+
+  submit.addEventListener('click',FormCheck)
+  console.log('insidemform');
 
 
 // 2. Last Name (accepts only alphabets a-zA-Z, max character size:20)

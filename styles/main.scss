@@ -1,8 +1,22 @@
-.main
-{
-    background-color: grey;        
+.main {
+  position: relative;
+  left: 25em;
+  background-color: grey;
+  width: 40%;
+  height: 50%;
+  color: whitesmoke;
 }
 
-.form{
-     background-color: red;
+.form {
+  background-color:#212F3C;
+  padding: 3em;
+}
+#form-item{
+    padding: 3em;
+}
+#btn-submit
+{
+padding: 15px;
+background-color: green;
+color: honeydew;
 }

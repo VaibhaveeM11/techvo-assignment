@@ -2,19 +2,22 @@
  let fname=document.getElementById('fName').value;
  let lname=document.getElementById('lName').value;
  let classe= document.getElementById('class');
+ let yearPass = document.getElementById('yearPass');
  let Percentage = document.getElementById('Percentage');
  let submit = document.getElementById('btn-submit');
  const maxNameLength =20;
-//  ^[0-9]*$"  
+ const Numformat= '^[0-9]*$';
   FormCheck=()=>
   {
-      //console.log('insidemform');
+
+    // To check all fields are not empty
+
       //1.Name (accepts only alphabets a-zA-Z, max character size:20)
-    if(fname=='' && fname.maxlength=='20')
+    if(fname=='' && lname=='' && classe=='' && yearPass=='' && Percentage=='')
     {
-        alert('Enter Your valid First Name');    
+        alert('fill all field');    
     }
-    else if(lname==''  && lname.maxlength=='20')
+    else if(fname.maxlength=='20'  && lname.maxlength=='20')
     {
         alert('Enter Your valid  Last Name');    
 
@@ -23,11 +26,11 @@
     {
 
     }
-    else if( classe=='')
+    else if( yearPass=='')
     {
 
     }
-    else if( Percentage=='')
+    else if( Number(Percentage)==true)
     {
 
     }

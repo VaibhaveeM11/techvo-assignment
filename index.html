@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
@@ -15,21 +16,21 @@
         <div id="statusBox">
         </div>
         <form class="form">
-             <label> First Name <input type="text" id='fName'/>
+             <label> First Name <input type="text" class="form-control" placeholder="Enter Your First name"id='fName'/>
              </label>
              <br>
-             <label> Last Name <input type="text" id='lName'/>
+             <label> Last Name <input type="text"class="form-control" placeholder="Enter Your Last name" id='lName'/>
              </label> 
              <br>
-             <label>Class:<input type="text" id='class'/>
+             <label>Class<input type="text" id='class' class="form-control" placeholder="Enter Your Class name"/>
              </label>
             </br>
-             <label>Year Of Passing:<input type="date" id='yearPass'/>
+             <label>Year Of Passing<input type="date" id='yearPass'/>
             </br>
-             <label>Percentage:<input type="text" id="Percentage"/>
+             <label>Percentage<input type="text" id="Percentage" class="form-control" placeholder="Percentage"/>
              </label>
             </br>
-             <button id="btn-submit">Submit</button>
+             <button id="btn-submit" class="btn-sm btn-block">Submit</button>
         </form>
     </div>
     <script src="../scripts/index.js"></script>

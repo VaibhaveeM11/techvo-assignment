@@ -12,19 +12,17 @@
   {
     let showStatus=[];
      //Name (accepts only alphabets a-zA-Z, max character size:20)
-      if(fname.length<=20 ||fname.value==='')
+      if(fname.length>=20 ||fname.value==='')
      {
-       // alert('Invalid Last Name');       
-         showStatus.push('Enter Name upto Max 20 leg');    
+            
+         showStatus.push('Enter First Name upto Max 20 leg');    
      }
      // Last Name (accepts only alphabets a-zA-Z, max character size:20)
-     if(lname.lenghth<=20 ||lname.value==='')
+     if(lname.lenghth>=20 ||lname.value==='')
      {
-        // alert('Invalid Last Name');
-        showStatus.push('Enter Name upto Max 20 leg');    
+        showStatus.push('Enter Last Name upto Max 20 leg');    
      }
      // Class (accepts both numeric and string values, eg. 5A)
-
 //    if( classe=='')
 //     {
 
@@ -38,16 +36,15 @@
 
 
 // Percentage of marks (accepts only number)
-     if( !Number(Percentage) || Percentage=='')
+     if( Number(Percentage)==false || Percentage=='')
     {
-        //alert('invalid Percentage');
-        showStatus.push('invalid Percentage');
+        showStatus.push('Enter Valid Percentage');
     }
 
     if(showStatus.length>0)
     {         e.preventDefault();
 
-        statusBox.innerText=showStatus.join(',');
+        statusBox.innerText=showStatus.join('||');
     }
   }
 

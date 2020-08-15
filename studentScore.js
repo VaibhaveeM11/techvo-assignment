@@ -36,7 +36,7 @@
            status='pass';
         }
           
-         else if(top==150 )
+         else if(top==Math.max() )
          {
              status="topper";
           }
@@ -56,8 +56,8 @@
                    ${status}
                 </td>
          </tr>`;
+    console.log(total<total+1 || total>total-1);
       });
-
    document.getElementById('tablebody').innerHTML=output;
     }
  });

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,CAAA;EACE,UAAU,EAAE,MAAM;CACrB;;AACD,AAAA,SAAS,CACT;EACA,cAAc,EAAE,UAAU;CACzB",
+    "sources": [
+        "studstyle.scss"
+    ],
+    "names": [],
+    "file": "studstyle.css"
+}
